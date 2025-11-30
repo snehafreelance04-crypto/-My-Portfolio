@@ -10,6 +10,10 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase} from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
+
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -17,6 +21,24 @@ export default function Experience() {
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+   <motion.div
+  initial={{ y: 0, rotate: 0 }}
+  animate={{ y: -5, rotate: -5 }}
+  transition={{
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 1.8,
+    ease: "easeInOut",
+  }}
+  className="flex justify-center mb-4"
+>
+  <FontAwesomeIcon
+    icon={faBriefcase}
+    size="2x"
+    className="text-gray-700 dark:text-white"
+  />
+</motion.div>
+
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (

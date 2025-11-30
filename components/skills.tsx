@@ -5,6 +5,9 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faLaptopCode} from "@fortawesome/free-solid-svg-icons";
+
 
 const fadeInAnimationVariants = {
   initial: {
@@ -29,6 +32,24 @@ export default function Skills() {
       ref={ref}
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
+       <motion.div
+  initial={{ scale: 1 }}
+  animate={{ scale: 1.12 }}
+  transition={{
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 1.4,
+    ease: "easeInOut",
+  }}
+  className="flex justify-center mb-4"
+>
+  <FontAwesomeIcon
+    icon={faLaptopCode}
+    className="text-gray-700 dark:text-white"
+    size="2x"
+  />
+</motion.div>
+
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (

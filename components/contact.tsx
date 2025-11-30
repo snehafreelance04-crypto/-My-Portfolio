@@ -6,6 +6,9 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -54,6 +57,24 @@ export default function Contact() {
         once: true,
       }}
     >
+      <motion.div
+  initial={{ y: 0, rotate: 0 }}
+  animate={{ y: -6, rotate: -8 }}
+  transition={{
+    repeat: Infinity,
+    repeatType: "reverse",
+    duration: 1.6,
+    ease: "easeInOut",
+  }}
+  className="flex justify-center mb-4"
+>
+  <FontAwesomeIcon
+    icon={faPaperPlane}
+    className="text-gray-700 dark:text-white"
+    size="2x"
+  />
+</motion.div>
+
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
