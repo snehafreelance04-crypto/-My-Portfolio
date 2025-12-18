@@ -75,6 +75,14 @@ export const projectsData = [
     deployed:"https://apple-gold-eight.vercel.app/",
   },
   {
+    title: "Kavix ",
+    description:
+"A modern investment insights platform with a clean UI, smooth animations, and a highly responsive user experience.",
+   tags: ["Next.js", "ShadCn" ,"React", "Framer Motion"],
+    imageUrl:"/kavix.png",
+    deployed:"https://kavix-two.vercel.app/",
+  },
+  {
     title: "Obys Agency",
     description:
       "I worked as a Frontend Developer and built a modern, minimal interface inspired by Obys Agency, focusing on smooth animations, clean typography, and a premium layout.",
