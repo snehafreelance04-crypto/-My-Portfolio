@@ -37,7 +37,7 @@ export const experiencesData = [
     description:
       "I have completed my high school from DAV Shimla. My major was Non-medical.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020",
   },
   {
     title: "University Graduated",
@@ -45,7 +45,7 @@ export const experiencesData = [
     description:
       "I graduated in 2022 with a degree in Computer Science and explored a wide range of modern technologies, many of which are reflected in my project work.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2023",
+    date: "2020 - 2024",
   },
   {
     title: "Frontend Developer",
@@ -53,7 +53,7 @@ location: "Solan",
 description:
   "Worked as a Frontend Developer at Tunica Technologies for 1 year, building responsive and interactive web interfaces using React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and ShadCN UI.",
 icon: React.createElement(FaReact),
-date: "2023 - 2024",
+date: "2024 - 2025",
   },
 ] as const;
 
