@@ -48,12 +48,12 @@ export const experiencesData = [
     date: "2019 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Solan",
-    description:
-      "I worked as a Full-Stack Next.js Developer at Tunica Technologies for 1 year. My tech stack includes React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and ShadCN UI.",
-    icon: React.createElement(FaReact),
-    date: "2023 - 2024",
+    title: "Frontend Developer",
+location: "Solan",
+description:
+  "Worked as a Frontend Developer at Tunica Technologies for 1 year, building responsive and interactive web interfaces using React, Next.js, TypeScript, Tailwind CSS, Framer Motion, and ShadCN UI.",
+icon: React.createElement(FaReact),
+date: "2023 - 2024",
   },
 ] as const;
 
